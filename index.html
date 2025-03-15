@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Amigo Secreto</title>
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Amigo Secreto</h1>
+    </header>
+
+    <main>
+        <section class="seccion-amigos">
+            <h2>Ingrese el nombre de sus amigos:</h2>
+            <div class="input-container">
+                <input type="text" id="amigo" placeholder="Escribe un nombre...">
+                <button onclick="agregarAmigo()">Añadir</button>
+            </div>            
+            
+            <ul id="listaAmigos"></ul>
+
+            <button id="borrarTodo" onclick="borrarLista()" style="display : none;">Borrar Todo</button>
+        </section>
+        
+        <section class="seccion-sorteo">
+            <h2>¡Hora de sortear!</h2>
+        
+            <div class="botones-sorteo">
+                <button id="sortearAmigo" onclick="sortearAmigo()">Sortear Amigo</button>
+                <button id="reiniciarSorteo" onclick="reiniciarSorteo()" disabled>Reiniciar Sorteo</button>
+            </div>
+        
+            <p id="resultado"></p>
+        
+            <div id="secreto-container">
+                <p id="mensaje-secreto">Aquí aparecerá tu amigo secreto...</p>
+            </div>            
+        </section>
+    </main>
+
+    <div id="mensaje-exito" class="mensaje-oculto"></div>
+    
+    <script src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>

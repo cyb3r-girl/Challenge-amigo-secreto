@@ -1,0 +1,231 @@
+:root {
+    --color-fondo: #fceff5;
+    --color-primario: #e6a5b2;
+    --color-secundario: #ffdde1;
+    --color-texto: #a6644f;
+    --color-botones: #d88a94;
+    --color-botones-hover: #c57a84;
+    --color-borde: #b8795b;
+    
+    --fuente-principal: "Poppins", sans-serif;
+    --fuente-titulo: "Pacifico", cursive;
+}
+
+body {
+    background-color: var(--color-fondo);
+    background-image: url("./img/fondoLazos.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: var(--fuente-principal);
+    text-align: center;
+    color: var(--color-texto);
+}
+
+header h1 {
+    font-family: "Pacifico", cursive;
+    color: #e6a5b2; /* Rosa fuerte */
+    font-size: 60px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    -webkit-text-stroke: 0.1px rgba(0, 0, 0, 0.15);
+}
+
+h2, h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #d88a94;
+}
+
+button {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: white;
+}
+
+p, li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--color-primario);
+    font-size: 18px;
+    outline: none;
+}
+
+button {
+    background-color: var(--color-primario);
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    font-family: var(--fuente-principal);
+    width: 160px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: var(--color-botones-hover);
+    transform: scale(1.1);
+}
+
+.sorteo-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#listaAmigos {
+    list-style: none;
+    padding: 0;
+}
+
+#listaAmigos li {
+    background-color: var(--color-secundario);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--color-texto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#listaAmigos li button {
+    background-color: #e6a5b2;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#listaAmigos li button:hover {
+    background-color: var(--color-botones-hover);
+}
+
+#secreto-container {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px dashed #b8795b;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #b8795b;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    display: none;
+}
+
+#mensaje-secreto {
+    color: gray;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.mostrar {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.mensaje-oculto {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e6a5b2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--color-primario);
+    font-size: 18px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.input-container button {
+    width: auto;
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+.botones-sorteo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.botones-sorteo button {
+    width: auto;
+    padding: 10px 15px;
+    min-width: 160px;
+}
+
+#secreto-container button {
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    min-width: 200px;
+}
