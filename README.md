@@ -14,7 +14,7 @@
 3. [🎥 Demostración de Funciones y Aplicaciones](#-demostración-de-funciones-y-aplicaciones)  
 4. [🔗 Acceso al Proyecto](#-acceso-al-proyecto)  
 5. [🛠️ Tecnologías Utilizadas](#-tecnologías-utilizadas)  
-6. [👨‍💻 Personas Desarrolladoras del Proyecto](#-personas-desarrolladoras-del-proyecto)  
+6. [💻 Personas Desarrolladoras del Proyecto](#-personas-desarrolladoras-del-proyecto)  
 7. [📜 Licencia](#-licencia)
 
 ---
@@ -58,8 +58,8 @@ Puedes acceder al código fuente en GitHub:
 
 ---
 
-## 👨‍💻 Personas Desarrolladoras del Proyecto  
-👩‍💻 **[Astrid Carolina Quisel Urrutia](https://github.com/cyb3r-girl)**
+## 💻 Personas Desarrolladoras del Proyecto  
+👩🏻‍💻 **[Astrid Carolina Quisel Urrutia](https://github.com/cyb3r-girl)**
 
 ---
 
