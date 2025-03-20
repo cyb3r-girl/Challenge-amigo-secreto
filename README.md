@@ -47,9 +47,9 @@ El **Desafío del Amigo Secreto** es una **aplicación web interactiva** 🌐 di
 
 ---
 
-## 🔗 Acceso al Proyecto  
+## 📂 Acceso al Proyecto  
 Puedes acceder al código fuente en GitHub:  
-🔗 [Repositorio en GitHub](https://github.com/cyb3r-girl/Challenge-amigo-secreto)
+🔗 [Challenge del Amigo Secreto](https://github.com/cyb3r-girl/Challenge-amigo-secreto)
 
 ---
 
@@ -58,7 +58,7 @@ Puedes acceder al código fuente en GitHub:
 
 ---
 
-## 💻 Personas Desarrolladoras del Proyecto  
+## 💻 Desarrolladores del Proyecto  
 👩🏻‍💻 **[Astrid Carolina Quisel Urrutia](https://github.com/cyb3r-girl)**
 
 ---
